@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+h1, p, button {
+    margin-left: 10px;
+}
+
+#tabBar {
+    background: #333;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.tab {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: #777;
+}
+
+#windowContainer {
+    position: relative;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 110px);
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    display: none;
+    position: absolute;
+}
+
+#paraWindow {
+    background: #f0f0f0;
+    z-index: 2;
+}
+
+#inputWindow {
+    background: #ffffff;
+    z-index: 1;
+}
+#tabBar, #startRound, h1, p {
+    position: relative;
+    z-index: 100;
+}

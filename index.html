@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<h1>Consent Form</h1>
+
+<p>Please read the following consent information carefully before continuing:</p>
+
+<textarea readonly>
+Study Title: Evaluation of a Novel Interaction Technique for Switching Windows
+
+Purpose of Study:
+You are invited to participate in a research study that evaluates a new computer interaction technique designed to improve how users switch between windows.
+
+Procedures:
+You will complete two typing tasks:
+- Round 1: Switch between text and typing windows using tabs.
+- Round 2: Use the Ctrl key to temporarily show the text window.
+The entire study will take approximately 5 to 10 minutes.
+
+Voluntary Participation:
+Your participation is completely voluntary. You may stop at any time without penalty.
+
+Data Collected:
+We will record:
+- The time it takes you to complete each task.
+- The number of times you switch between windows.
+- No personally identifiable information will be collected beyond your first name.
+
+Confidentiality:
+Your data will be anonymized. Only aggregate results will be reported.
+
+Consent:
+By entering your name and clicking I Consent, you acknowledge that you have read this information and agree to participate.
+    </textarea>
+
+<br>
+<input type="text" id="nameInput" placeholder="Your first name (required)" />
+<button onclick="downloadConsent()">I Consent</button>
+
+<script>
+    function downloadConsent() {
+        const name = document.getElementById('nameInput').value.trim();
+        if (!name) {
+            alert('Please enter your first name to give consent.');
+            return;
+        }
+        const date = new Date().toLocaleString();
+
+        const consentBody = `
+Study Title: Evaluation of a Novel Interaction Technique for Switching Windows
+
+Purpose of Study:
+You are invited to participate in a research study that evaluates a new computer interaction technique designed to improve how users switch between windows.
+
+Procedures:
+You will complete two typing tasks:
+- Round 1: Switch between text and typing windows using tabs.
+- Round 2: Use the Ctrl key to temporarily show the text window.
+The entire study will take approximately 5 to 10 minutes.
+
+Voluntary Participation:
+Your participation is completely voluntary. You may stop at any time without penalty.
+
+Data Collected:
+We will record:
+- The time it takes you to complete each task.
+- The number of times you switch between windows.
+- No personally identifiable information will be collected beyond your name.
+
+Confidentiality:
+Your data will be anonymized. Only aggregate results will be reported.
+
+Consent:
+By entering your name and clicking I Consent, you acknowledge that you have read this information and agree to participate.
+`;
+
+        const consentText = `Consent given by: ${name}\nDate: ${date}\n\n${consentBody}`;
+        const blob = new Blob([consentText], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'consent.txt';
+        a.click();
+        window.location.href = 'instructions.html';
+    }
+
+</script>
+</body>
+</html>

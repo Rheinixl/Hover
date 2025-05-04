@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Typing Test</h1>
+<p>Round: <span id="roundNum">1</span></p>
+<button id="startRound">Start Round</button>
+
+<div id="tabBar" style="display: none;">
+    <button class="tab" id="textTab">Text</button>
+    <button class="tab" id="typeTab">Type</button>
+</div>
+
+<div id="windowContainer" style="display: none;">
+    <div id="paraWindow" class="window">
+        <p id="paragraph">This is the test paragraph to copy over.</p>
+    </div>
+    <div id="inputWindow" class="window">
+        <textarea id="typingArea" rows="10" cols="80" placeholder="Type here..."></textarea>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
