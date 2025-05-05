@@ -1,0 +1,29 @@
+Consent given by: Andy Tamayo
+Date: 5/4/2025, 7:48:29 PM
+
+
+Study Title: Evaluation of a Novel Interaction Technique for Switching Windows
+
+Purpose of Study:
+You are invited to participate in a research study that evaluates a new computer interaction technique designed to improve how users switch between windows.
+
+Procedures:
+You will complete two typing tasks:
+- Round 1: Switch between text and typing windows using tabs.
+- Round 2: Use the Ctrl key to temporarily show the text window.
+The entire study will take approximately 5 to 10 minutes.
+
+Voluntary Participation:
+Your participation is completely voluntary. You may stop at any time without penalty.
+
+Data Collected:
+We will record:
+- The time it takes you to complete each task.
+- The number of times you switch between windows.
+- No personally identifiable information will be collected beyond your name.
+
+Confidentiality:
+Your data will be anonymized. Only aggregate results will be reported.
+
+Consent:
+By entering your name and clicking I Consent, you acknowledge that you have read this information and agree to participate.

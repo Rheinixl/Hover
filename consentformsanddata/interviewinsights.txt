@@ -1,0 +1,14 @@
+Interview Insights
+
+Overall Impressions:
+Many users appreciated the press-and-release hover mechanism because it made them feel like they were “doing one less thing” compared to switching to and back from a window using tabs or Alt+Tab. This streamlined the experience and reduced the sense of interruption in their workflow.
+
+Several users also commented positively on the semi-transparent design of the overlay window. They liked that they could cross-examine or compare their ongoing work with the reference text without fully losing sight of what they were typing. This gave them a stronger sense of context and control.
+
+Suggestions and Ideas:
+- Add an adjustable transparency slider so users can control how see-through the overlay is.
+- Make hover key a standalone key rather than alt.
+- Provide a visual indicator or animation when the hover window activates, to make the state change more noticeable.
+- Add an option to “lock” the overlay temporarily so it stays visible without holding the key.
+
+Overall, users saw the hover technique as a useful improvement over traditional window switching, especially for tasks requiring frequent cross-referencing.

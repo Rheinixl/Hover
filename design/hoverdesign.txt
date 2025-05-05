@@ -1,0 +1,18 @@
+Design Description
+
+Interaction Technique:
+The hover button is designed to reduce the cognitive and motor burden of switching between windows when multitasking on a computer.
+
+Motivation:
+While coding, users often need to reference external resources like requirements documents, documentation pages, or design notes. Constantly switching between code and reference windows using traditional methods (clicking tabs, using Alt+Tab, or mousing to other windows) interrupts workflow, introduces delays, and increases frustration — especially when repeated dozens or hundreds of times per session.
+
+Technique Concept:
+The hover button allows the user to designate a target window (e.g., the requirements document) and then temporarily overlay it on top of the active window by holding a modifier key (such as Ctrl). This “peek” mechanism lets the user momentarily access critical information without breaking focus or disrupting the active workspace.
+
+Key Design Features:
+- Short press → sets the target window to hover.
+- Long press or hold → overlays the target window semi-transparently on top of the active window.
+- Release → instantly returns to the active window, maintaining flow.
+
+Rationale:
+By minimizing full-context switches and reducing the need for mechanical tabbing or window hunting, the hover button design improves task continuity, lowers cognitive load, and reduces user frustration in multitasking scenarios like programming, writing, or design work.
